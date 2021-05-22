@@ -42,15 +42,18 @@ p {
     position: fixed;
     right: 0;
     z-index: 999;
+    background-color: #FFFFFF;
+    border-radius: 0 0 0 8px;
 }
 
 #nav-bar ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 #nav-bar ul li {
-    padding: 8px;
+    padding: 16px;
 }
 
 a.nav-item {
@@ -64,7 +67,7 @@ a.nav-item:hover {
     text-decoration: none;
 }
 
-a.active {
+#nav-bar ul li a.active {
     border-bottom: 1px solid #e63946;
 }
 
@@ -87,23 +90,24 @@ a.active {
 .slant-bg {
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 50%);
     /* background-color: #7b4fe7; */
-    background-color: #2a9d8f;
+    /* background-color: #2a9d8f; */
+    background-color: #C1DBE3;
     height: 100%;
     position: absolute;
     width: 100%;
     z-index: -1;
-    background: url('https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded.gif');
+    /* background: url('https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded.gif'); */
     opacity: .9;
 }
 
-#background {
+/* #background {
     background: url('https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded.gif');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .7;
     height: 100%;
     background-color: black;
-}
+} */
 
 #brand-info-container {
     /* height: 60vh; */
@@ -152,7 +156,7 @@ a.active {
 
 .products-btn {
     color: #FFFFFF;
-    background-color: #3891A6;
+    background-color: #3891A6CC;
     padding: 16px;
     border-radius: 8px;
     text-align: center;
@@ -161,9 +165,14 @@ a.active {
     font-size: 16px;
 }
 
-.products-btn a {
+.products-btn a,
+.products-btn a:visited {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.products-btn:hover {
+    background-color: #3891A6EE;
 }
 
 /* Hero Section - End */
@@ -173,14 +182,15 @@ a.active {
 /* Services Section - Start */
 
 #services-title {
-    text-align: right;
+    text-align: left;
+    /* margin-left: 4rem; */
     margin-bottom: 8px;
 }
 
 #service-item-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     height: 50%;
 }
 
